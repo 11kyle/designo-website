@@ -1,11 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import HeroSection from '../components/HeroSection'
-import HeroSectionSecondary from '../components/HeroSectionSecondary'
-import { Inter } from 'next/font/google'
+import Head from "next/head"
+import Image from "next/image"
+import HeroSection from "../components/HeroSection"
+import HeroSectionSecondary from "../components/HeroSectionSecondary"
+import Card from "../components/Card"
+import Footer from "../components/Footer"
+import { Inter } from "next/font/google"
 // import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
@@ -16,10 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex flex-col gap-y-10 max-w-2xl lg:max-w-[1110px] px-6 sm:px-10 mx-auto'>
+      <main className="flex flex-col gap-y-10 max-w-2xl lg:max-w-[1110px] px-6 sm:px-10 mx-auto">
         <HeroSection />
         <HeroSectionSecondary />
+        <Card />
       </main>
+      <Footer />
     </>
   )
 }
