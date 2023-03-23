@@ -21,18 +21,18 @@ const topics = [
   },
 ]
 
-export default function Example() {
+export default function Card() {
   return (
     <div className="">
       <div className="mx-auto text-center sm:text-left lg:text-center lg:px-8">
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          className="mx-auto grid max-w-2xl grid-cols-1 gap-6 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
           {topics.map((topic) => (
             <li
               key={topic.title}
-              className="flex flex-col sm:flex-row lg:flex-col rounded-2xl py-10 px-8"
+              className="flex flex-col sm:flex-row lg:flex-col gap-x-12 rounded-2xl px-8"
             >
               <Image
                 className="mx-auto h-52 w-52 rounded-full bg-gradient-to-r from-orange-100 to-white md:h-56 md:w-56"
@@ -42,7 +42,7 @@ export default function Example() {
                 alt=""
               />
               <div>
-                <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight">
+                <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight mb-4">
                   {topic.title}
                 </h3>
                 <p className="text-sm leading-6 text-gray-400">
